@@ -1,0 +1,32 @@
+Trabalho Semana 5 - Algoritmos 
+Aluno: Antonio Tadeu 
+Projeto Integrador: Programacao Aplicada ao Direito
+
+
+1 - Implementação do Bubble Sort:
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+# Exemplo de uso:
+arr = [70, 40, 35, 23, 20, 1, 80]
+bubble_sort(arr)
+print("Lista ordenada pelo Bubble Sort:", arr)
+
+
+
+2- Implementação para imprimir apenas as vogais de uma palavra ou frase:
+
+
+def imprime_vogais(texto):
+    vogais = "aeiouAEIOU"
+    vogais_encontradas = [char for char in texto if char in vogais]
+    print("Vogais encontradas:", ''.join(vogais_encontradas))
+
+# Exemplo de uso:
+texto = "exercicio aula"
+imprime_vogais(texto)
